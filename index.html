@@ -661,6 +661,129 @@
         box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
       }
 
+      /* Demo Credentials Box */
+      .demo-credentials {
+        background: rgba(99, 102, 241, 0.15);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 24px;
+        padding: 40px;
+        margin: 40px auto;
+        max-width: 600px;
+        text-align: center;
+        box-shadow:
+          0 8px 32px rgba(99, 102, 241, 0.2),
+          0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .demo-credentials::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+      }
+
+      .demo-credentials:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 12px 40px rgba(99, 102, 241, 0.25),
+          0 1px 0 rgba(255, 255, 255, 0.15) inset;
+      }
+
+      .demo-credentials h3 {
+        color: #e0e7ff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-shadow: 0 0 20px rgba(224, 231, 255, 0.3);
+        letter-spacing: -0.01em;
+      }
+
+      .demo-credentials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      .demo-role {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 25px;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
+
+      .demo-role:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      .demo-role h4 {
+        color: #a5b4fc;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-shadow: 0 0 10px rgba(165, 180, 252, 0.3);
+      }
+
+      .demo-role p {
+        color: #e2e8f0;
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-weight: 400;
+      }
+
+      .demo-role .email {
+        color: #cbd5e1;
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 5px 0;
+        font-size: 0.9rem;
+      }
+
+      .demo-role .password {
+        color: #10b981;
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+        background: rgba(16, 185, 129, 0.1);
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        margin: 5px 0;
+        font-size: 0.9rem;
+        text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+      }
+
+      .demo-note {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-top: 25px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
       @media (max-width: 768px) {
         .slide {
           padding: 30px;
@@ -687,6 +810,16 @@
         .nav-button {
           padding: 8px 15px;
           font-size: 0.9rem;
+        }
+
+        .demo-credentials {
+          margin: 20px;
+          padding: 30px;
+        }
+
+        .demo-credentials-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
         }
       }
     </style>
@@ -1296,6 +1429,45 @@
             <li><strong>Documentation:</strong> Available upon request</li>
             <li><strong>Financial Models:</strong> Available for review</li>
           </ul>
+        </div>
+
+        <!-- Demo Credentials Box -->
+        <div class="demo-credentials">
+          <h3>🔐 Demo Credentials</h3>
+          <p style="color: #cbd5e1; margin-bottom: 30px; font-size: 1.1rem;">
+            Test the platform with these pre-configured accounts
+          </p>
+          
+          <div class="demo-credentials-grid">
+            <div class="demo-role">
+              <h4>👤 Patient Account</h4>
+              <p><strong>Email:</strong></p>
+              <div class="email">patient.demo@nostra-health.com</div>
+              <p><strong>Password:</strong></p>
+              <div class="password">Patient123!</div>
+            </div>
+            
+            <div class="demo-role">
+              <h4>👨‍⚕️ Doctor Account</h4>
+              <p><strong>Email:</strong></p>
+              <div class="email">doctor.demo@nostra-health.com</div>
+              <p><strong>Password:</strong></p>
+              <div class="password">Doctor123!</div>
+            </div>
+            
+            <div class="demo-role">
+              <h4>👥 Caregiver Account</h4>
+              <p><strong>Email:</strong></p>
+              <div class="email">caregiver.demo@nostra-health.com</div>
+              <p><strong>Password:</strong></p>
+              <div class="password">Caregiver123!</div>
+            </div>
+          </div>
+          
+          <div class="demo-note">
+            💡 <strong>Pro Tip:</strong> Each account has different permissions and features. 
+            Try logging in as different roles to experience the full platform capabilities.
+          </div>
         </div>
         <div style="text-align: center; margin-top: 40px">
           <h2>Thank You</h2>
