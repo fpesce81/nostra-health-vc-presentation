@@ -32,7 +32,7 @@ A cutting-edge, Apple-inspired glassmorphism presentation showcasing Nostra Heal
 ### 📱 Usage
 
 1. **Navigation**: Use Previous/Next buttons or arrow keys
-2. **Keyboard Shortcuts**: 
+2. **Keyboard Shortcuts**:
    - `→` or `Space` - Next slide
    - `←` - Previous slide
 3. **Mobile**: Touch-friendly interface with responsive design
