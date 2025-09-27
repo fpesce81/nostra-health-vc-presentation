@@ -1,18 +1,5 @@
 # Nostra Health - VC Investment Presentation
 
-## 🚀 Interactive Investment Deck
-
-A cutting-edge, Apple-inspired glassmorphism presentation showcasing Nostra Health's comprehensive healthcare platform to potential investors.
-
-### ✨ Features
-
-- **16 comprehensive slides** covering all aspects of the investment opportunity
-- **Apple-inspired glassmorphism design** with contemporary aesthetics
-- **Interactive navigation** with keyboard support (arrow keys, spacebar)
-- **Mobile-responsive** design optimized for all devices
-- **Smooth animations** and professional transitions
-- **Live platform screenshots** demonstrating real functionality
-
 ### 🎯 Presentation Highlights
 
 - **Problem & Solution**: Healthcare fragmentation and unified platform approach
@@ -21,13 +8,6 @@ A cutting-edge, Apple-inspired glassmorphism presentation showcasing Nostra Heal
 - **Business Model**: Multiple revenue streams with SaaS, transaction fees, and analytics
 - **Financial Projections**: Path to $50M ARR with detailed 5-year projections
 - **Competitive Advantage**: Unique multi-stakeholder platform with network effects
-
-### 🛠️ Technical Details
-
-- **Pure HTML/CSS/JavaScript** - No dependencies required
-- **Glassmorphism effects** with backdrop-filter and modern CSS
-- **Apple typography** using SF Pro Display font family
-- **Optimized performance** with efficient animations and transitions
 
 ### 📱 Usage
 
@@ -49,5 +29,3 @@ Visit the live Nostra Health platform: [www.nostra-health.com](https://www.nostr
 - **Exit Strategy**: Strategic acquisition, IPO, or private equity
 
 ---
-
-*Built with ❤️ for the future of healthcare*
